@@ -7,8 +7,16 @@
 
 import Foundation
 
-let jentes: [String: Any] = ["Nom":"Escorneboueu", "Prenom":"Titouan", "Age":22]
-
-for (key, value) in jentes {
-    print("\(key) = \(value)")
+func Carre(x: Int) -> Int {
+    return x * x
 }
+
+func Resultat(fonction: (Int) -> Int) -> String {
+    if fonction(5) == 25 {
+        return "La fonction est bonne"
+    } else {
+        return "Tu as fait de la merde"
+    }
+}
+
+print(Resultat(fonction: Carre))
