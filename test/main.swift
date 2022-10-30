@@ -7,5 +7,9 @@
 
 import Foundation
 
-print("Hello, World!")
+let nombre1: Int = 30
+let nombre2: Int = 80
 
+if nombre1 < nombre2 {
+    print("C'est bien enculé")
+}
