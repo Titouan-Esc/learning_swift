@@ -7,9 +7,8 @@
 
 import Foundation
 
-let nombre1: Int = 30
-let nombre2: Int = 80
+let jentes: [String: Any] = ["Nom":"Escorneboueu", "Prenom":"Titouan", "Age":22]
 
-if nombre1 < nombre2 {
-    print("C'est bien enculé")
+for (key, value) in jentes {
+    print("\(key) = \(value)")
 }
