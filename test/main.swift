@@ -19,4 +19,6 @@ func Resultat(fonction: (Int) -> Int) -> String {
     }
 }
 
-print(Resultat(fonction: Carre))
+print(Resultat{(x: Int) -> Int in
+    return x * x
+})
